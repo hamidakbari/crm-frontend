@@ -9,8 +9,21 @@ export const Entry=()=>{
 
     const handleOnChange = e =>{
         const {name , value} = e.target;
+        switch (name){
+            case "email":
+                setEmail(value);
+                break;
+                case "password":
+                    setPassword(value);
+                    break;
+                    default:
+                        break;
+        }    
         console.log(name , value);
     }
+
+    
+
     return(
         <div className="entry-page bg-info">
            
